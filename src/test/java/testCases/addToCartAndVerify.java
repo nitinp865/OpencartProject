@@ -47,10 +47,11 @@ public class addToCartAndVerify extends baseClass{
 		//sum of both product
 		double d = d1 + d2;
 		String sumOfProduct = "$"+d;
+		
 		//to get cart value
-		wb.until(ExpectedConditions.visibilityOf(HPO.clickOnCart()));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		HPO.clickOnCart().click();
-		wb.until(ExpectedConditions.visibilityOf(HPO.getCartValue()));
+		//wb.until(ExpectedConditions.visibilityOf(HPO.getCartValue()));
 		String cartValue = HPO.getCartValue().getText();
 		
 		commonUtilities.handleAssertions(sumOfProduct, cartValue);
