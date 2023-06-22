@@ -14,7 +14,7 @@ import Resources.constant;
 
 public class addToCartAndVerify extends baseClass{
 	@Test
-	public void addToCart() throws IOException {
+	public void addToCart() throws IOException, InterruptedException {
 		driver.manage().window().maximize();
 		WebDriverWait wb=new WebDriverWait(driver, Duration.ofSeconds(10));
 		//Iphone code
@@ -49,9 +49,9 @@ public class addToCartAndVerify extends baseClass{
 		String sumOfProduct = "$"+d;
 		
 		//to get cart value
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		
+		Thread.sleep(2000);
 		HPO.clickOnCart().click();
-		//wb.until(ExpectedConditions.visibilityOf(HPO.getCartValue()));
 		String cartValue = HPO.getCartValue().getText();
 		
 		commonUtilities.handleAssertions(sumOfProduct, cartValue);
