@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-22T19:42:41 IST" name="Suite" finished-at="2023-06-22T19:43:00 IST" duration-ms="18598">
+  <suite started-at="2023-06-23T13:28:55 IST" name="Default suite" finished-at="2023-06-23T13:29:22 IST" duration-ms="26253">
     <groups>
     </groups>
-    <test started-at="2023-06-22T19:42:41 IST" name="Test" finished-at="2023-06-22T19:43:00 IST" duration-ms="18598">
+    <test started-at="2023-06-23T13:28:55 IST" name="Default test" finished-at="2023-06-23T13:29:22 IST" duration-ms="26253">
       <class name="testCases.addToCartAndVerify">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.addToCartAndVerify@4d9e68d0]" started-at="2023-06-22T19:42:41 IST" name="launchURL" finished-at="2023-06-22T19:42:54 IST" duration-ms="12406" status="PASS">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.addToCartAndVerify@4d9e68d0]" started-at="2023-06-23T13:28:56 IST" name="launchURL" finished-at="2023-06-23T13:29:16 IST" duration-ms="19957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="addToCart()[pri:0, instance:testCases.addToCartAndVerify@4d9e68d0]" started-at="2023-06-22T19:42:54 IST" name="addToCart" finished-at="2023-06-22T19:43:00 IST" duration-ms="6091" status="PASS">
+        <test-method signature="addToCart()[pri:0, instance:testCases.addToCartAndVerify@4d9e68d0]" started-at="2023-06-23T13:29:16 IST" name="addToCart" finished-at="2023-06-23T13:29:22 IST" duration-ms="6175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
       </class> <!-- testCases.addToCartAndVerify -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
